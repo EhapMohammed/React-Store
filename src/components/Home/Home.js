@@ -2,18 +2,18 @@ function Home() {
   return (
     <>
       {/* <!-- second Section OUR PRODUCTS--> */}
-      <sction id="our-product" className="product-main-contianer col-md-12 col-lg-12 col-12 mx-auto my-5">
+      <section id="our-product" className="product-main-contianer col-md-12 col-lg-12 col-12 mx-auto my-5">
         <h3 className="">Our Product</h3>
         <p>if you are looking for comfort, distinction and enjoyment, then you are here</p>
         <div className="products-section col-12 col-md-12 flex-wrap px-0">
           {/* <!-- card of single product --> */}
 
         </div>
-      </sction>
+      </section>
 
 
       {/* <!-- fourth Section Best Saller--> */}
-      <sction id="best-seler" className="bestSaller-main-contianer col-md-12 col-lg-12 col-12 my-5">
+      <section id="best-seler" className="bestSaller-main-contianer col-md-12 col-lg-12 col-12 my-5">
         <div className="best-description col-md-5 col-lg-5 col-12">
           <h4 className="card-title">Best Seller</h4>
           <a href="/#" className="product-title font-weight-bold">product title</a>
@@ -44,10 +44,10 @@ function Home() {
           <img className="img2" src="{{asset('images/'.$best_product->image)}}" alt="Card  cap" />
           <img className="img3" src="{{asset('images/'.$best_product->image)}}" alt="Card  cap" />
         </div>
-      </sction>
+      </section>
 
       {/* <!-- fourth Section FLASH SALE--> */}
-      <sction id="flash-sale" className="flashSale-main-contianer my-5">
+      <section id="flash-sale" className="flashSale-main-contianer my-5">
         <h3 className="mb-5 ">FLASH SALE</h3>
         <div className="flashSale-section">
           <div className="card">
@@ -67,7 +67,7 @@ function Home() {
           </div>
 
         </div>
-      </sction>
+      </section>
 
     </>
   );

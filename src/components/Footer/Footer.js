@@ -4,8 +4,8 @@ function Footer() {
             {/* <!-- Buy now popup --> */}
             <div id="popUp" className="popUp col-md-12 ">
                 <div id="popup-container" className="popup-container col-md-6 mx-auto text-center bg-light p-5">
-                    <i id="close-icon" onclick="closePopup()" className="fas fa-times position-absolute"></i>
-                    <img src="{{asset('images/'.$setting->image_buy_now)}}" width="150px" height="150px" alt="" />
+                    <i id="close-icon" className="fas fa-times position-absolute"></i>
+                    <img src="" width="150px" height="150px" alt="" />
                     <p className=""></p>
                     <a href="/#" target="_blank" id="buy_now_link" className="btn btn-dark">Continue</a>
                 </div>
@@ -22,7 +22,7 @@ function Footer() {
                     <div className="input-group">
                         <input type="text" className="form-control" id="mail_input" placeholder="Enter Your Email"
                             aria-label="Recipient's username" aria-describedby="basic-addon2" style={({borderRadius: 'unset',})} />
-                        <button className="btn btn-warning send_subscribe" onclick="sendSubscribe()" id="basic-addon2"
+                        <button className="btn btn-warning send_subscribe"  id="basic-addon2"
                             style={({borderRadius: 'unset',})}>Subscripe Now</button>
                     </div>
                 </div>
