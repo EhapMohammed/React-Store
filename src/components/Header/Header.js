@@ -1,3 +1,6 @@
+
+import logo1 from '../../Images/Logo-vector-file.png'
+
 function Header() {
     return (
       <>
@@ -5,8 +8,7 @@ function Header() {
     <header className="py-2">
         <nav className="navbar navbar-expand-lg navbar-dark col-md-12 col-lg-12 m-auhref">
             <a className="navbar-brand mr-0 col-5 col-md-3" href="/#">
-                <img src="/src/Images/Logo-vector-file.png" alt=""
-                    style={({height:'40px', width:'60px'})}/>
+                <img src={logo1} alt="sitelogo" style={({height:'40px', width:'60px'})}/>
             </a>
             <buthrefn className="navbar-hrefggler" type="buthrefn" data-hrefggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="hrefggle navigation">
