@@ -1,48 +1,52 @@
 import image1 from '../../Images/pexels-jonathan-borba-3076509.jpg'
-import image2 from '../../Images/Location.png'
+import Modal from '../Modal/Modal';
 function Slider() {
     return (
       <>
-      <div id="carouselExampleControls" className="carousel slide col-md-12 col-lg-12 col-12 px-0" data-ride="carousel">
-        <div className="carousel-inner">
+      <div id="myCarousel" className="carousel slide" data-bs-ride="carousel">
+      <div className="carousel-indicators">
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
 
-            <div className="carousel-item active">
-                <img src={image1} alt="..." className="d-block w-100"/>
-                <div className="carousel-caption">
+      <div className="carousel-inner">
+        <div className="carousel-item active">
+          <img src={image1} className="d-block w-100" alt="Slide 1" />
+          <div className="carousel-caption">
                     <h5>Hello, We Are Store</h5>
                     <p>Happy to sea You here</p>
-                    <button className="btn-sm btn-container d-flex">
-                        <img className="cart-img" alt='cart' src={image2}/>
-                        <p className="text-light">Shop Now</p>
-                    </button>
+                   <Modal />
                 </div>
-            </div>
-            <div className="carousel-item ">
-                <img src={image2} alt="..." className="d-block w-100"/>
-                <div className="carousel-caption">
-                    <h5>Hello, We Are Store</h5>
-                    <p>Happy to sea You here</p>
-                    <button className="btn-sm btn-container d-flex">
-                        <img className="cart-img" alt='cart' src={image2}/>
-                        <p className="text-light">Shop Now</p>
-                    </button>
-                </div>
-            </div>
-
         </div>
+        <div className="carousel-item">
+          <img src={image1} className="d-block w-100" alt="Slide 2" />
+          <div className="carousel-caption">
+                    <h5>Hello, We Are Store</h5>
+                    <p>Happy to sea You here</p>
+                     <Modal />
+                </div>
+        </div>
+        <div className="carousel-item">
+          <img src={image1} className="d-block w-100" alt="Slide 3" />
+          <div className="carousel-caption">
+                    <h5>Hello, We Are Store</h5>
+                    <p>Happy to sea You here</p>
+                     <Modal />
+                </div>
+        </div>
+      </div>
 
-        <a className="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-            <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span className="sr-only">Previous</span>
-        </a>
-        <a className="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-        <span className="sr-only">Next</span>
-            <span className="carousel-control-next-icon" aria-hidden="true"></span>
-        </a>
+      <button className="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+        <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span className="visually-hidden">Previous</span>
+      </button>
+      <button className="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+        <span className="carousel-control-next-icon" aria-hidden="true"></span>
+        <span className="visually-hidden">Next</span>
+      </button>
     </div>
-
-       
-
+    
       </>
     );
   }

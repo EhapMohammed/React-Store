@@ -65,7 +65,7 @@ nav {
 }
 
 .navbar-brand {
-  padding-left: 3.5rem;
+  padding-left: 2rem;
 }
 
 @media (max-width: 1024px) {
@@ -274,7 +274,7 @@ transform: translateY(-333px);
 
 .carousel-item .btn-container,
 .best-description .btn-container {
-  background-color: black;
+  background-color: black !important;
 }
 
 .product-title {
