@@ -10,13 +10,6 @@ html {
   scroll-behavior: smooth;
 }
 
-
-/* @font-face {
-font-family: Droid Arabic Kufi;
-src: url(../webfonts/Droid.Arabic.Kufi.ttf);
-} */
-
-
 /* Start Variables */
 
 :root {
@@ -176,61 +169,6 @@ nav ul li {
   }
 }
 
-
-/* slide section */
-
-
-/* .slide-section
-{
-overflow-y: hidden;
-height: 450px;
-position: relative;
-}
-@media (max-width: 768px) {
-.slide-section
-{
-height: 250px;
-}
-.slide-container {
-height: 250px;
-transform: translateY(250px);
-}
-}
-.slide-container.active {
-transform: translateY(0px);
-}
-.slide-container {
-position: relative;
-height: 450px;
-background-position: bottom;
-background-size: 100% 160%;
-transform: translateY(450px);
-transform-origin: top;
-transition: transform 0.5s ease-in-out;
-}
-.slider__arrow {
-position: absolute;
-top: 50%;
-right: 20px;
-display: flex;
-align-items: center;
-justify-content: center;
-cursor: pointer;
-}
-
-.slider__arrow i {
-width: 20px;
-height: 20px;
-}
-
-.slider__arrow--up {
-top: 45%;
-}
-
-.slider__arrow--down {
-bottom: 45%;
-} */
-
 .carousel-item {
   height: 450px;
 }
@@ -256,7 +194,7 @@ transform: translateY(-333px);
   width: 50%;
   position: absolute;
   top: 15px;
-  left: 50px;
+  left: 25vw;
   right: unset;
   bottom: unset;
 }

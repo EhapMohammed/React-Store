@@ -1,24 +1,16 @@
 import Modal from "../Modal/Modal";
-import Product from "../Product/Product";
+import ProductList from "../ProductList/ProductList";
+import Slider from '../Slider/Slider';
 
 function Home() {
+
+
   return (
     <>
+    <Slider />
       {/* <!-- second Section OUR PRODUCTS--> */}
-      <section
-        id="our-product"
-        className="product-main-contianer col-md-12 col-lg-12 col-12 mx-auto my-5"
-      >
-        <h3 className="ps-3">Our Product</h3>
-        <p className="ps-3">
-          if you are looking for comfort, distinction and enjoyment, then you
-          are here
-        </p>
-        <div className="products-section col-12 col-md-12 flex-wrap px-0">
-          {/* <!-- card of single product --> */}
-          <Product />
-        </div>
-      </section>
+      <ProductList />
+
 
       {/* <!-- fourth Section Best Saller--> */}
       <section
@@ -27,7 +19,7 @@ function Home() {
       >
         <div className="best-description col-md-5 col-lg-5 col-12">
           <h4 className="card-title ">Best Seller</h4>
-          <a href="" className="product-title font-weight-bold"></a>
+          <a href="/#" className="product-title font-weight-bold"></a>
           <p className="card-text">
             if you are looking for comfort, distinction and enjoyment, then you
             are here
@@ -71,7 +63,7 @@ function Home() {
             </div>
             <div className="card-body ">
               <h4 className="card-title">
-                <a href="" className=""></a>
+                <a href="/#" className=""></a>
               </h4>
               <p className="card-text"></p>
               <Modal />

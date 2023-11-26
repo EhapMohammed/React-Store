@@ -1,7 +1,12 @@
-
+import { useLocation } from "react-router-dom";
+import { Link } from 'react-router-dom';
 import logo1 from '../../Images/Logo-vector-file.png'
 
 function Header() {
+
+    const location = useLocation();
+    console.log(location);
+
     return (
       <>
     {/* <!-- ****** start navbar ******--> */}
@@ -17,11 +22,11 @@ function Header() {
             <div className="collapse navbar-collapse  col-md-9 col-lg-9" id="navbarSupportedContent">
                 <ul className="navbar-nav col-md-12 col-lg-12 flex-wrap">
 
-                    <li className="nav-item el-active alignCenter">
-                        <a className="nav-link" href="/#">Home</a>
+                    <li className={location.pathname === "/" ? "nav-item  el-active alignCenter" :"nav-item  alignCenter"}>
+                        <Link className="nav-link" to="/">Home</Link>
                     </li>
-                    <li className="nav-item alignCenter">
-                        <a className="nav-link" href="/#">Products </a>
+                    <li className={location.pathname === "/Product" ? "nav-item  el-active alignCenter" :"nav-item  alignCenter"}>
+                        <Link className="nav-link" to="/Product">Products </Link>
                     </li>
                     <li className="nav-item alignCenter">
                         <a className="nav-link" href="/#">Best Seler</a>

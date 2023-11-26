@@ -1,4 +1,4 @@
-import image1 from '../../Images/pexels-jonathan-borba-3076509.jpg'
+import image1 from '../../Images/Stretching exercises-rafiki.png'
 import Modal from '../Modal/Modal';
 function Slider() {
     return (
