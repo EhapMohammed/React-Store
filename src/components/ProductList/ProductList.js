@@ -1,21 +1,52 @@
 
 import { useState , useEffect } from "react";
+import axios from "axios";
 import Product from "../Product/Product"
 
 function ProductList() {
   const proudect_api = "https://fakestoreapi.com/products";
   const [products , setProducts] = useState([]);
+  const [refresh , setRefresh] = useState(false);
 
-  useEffect(() => {
-    fetch(proudect_api)
-    .then((res) => res.json())
-    .then((data) => setProducts(data))
-  }, [])
+
+  // useEffect(() => {
+  //   fetch(proudect_api)
+  //   .then((res) => res.json())
+  //   .then((data) => setProducts(data))
+  // }, [])
+
   
-  console.log(products)
+  useEffect(() => {
+    (async ()=>{
+      const result = await axios.get(proudect_api);
+      console.log(result.data);
+      setProducts(result.data);
+    })() ;
+   
+  },[refresh])
+  
+  const addCat = ()=>{
+    // fetch('https://fakestoreapi.com/products',{
+    //         method:"POST",
+    //         body:JSON.stringify(
+    //             {
+    //                 title: 'test product',
+    //                 price: 13.5,
+    //                 description: 'lorem ipsum set',
+    //                 image: 'https://i.pravatar.cc',
+    //                 category: 'electronic'
+    //             }
+    //         )
+    //     })
+    //         .then(res=>res.json())
+    //         .then(json=>console.log(json));
+
+            setRefresh(!refresh);
+  }
+
   return (
     <>
-      
+      <button onClick={addCat}>add</button>
       <section 
         id="our-product"
         className="product-main-contianer col-md-12 col-lg-12 col-12 mx-auto my-5"
