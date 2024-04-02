@@ -1,3 +1,5 @@
+import Img2 from '../../Images/Time-management-cuate.png'
+
 function Footer() {
     return (
         <>
@@ -5,7 +7,7 @@ function Footer() {
             <div id="popUp" className="popUp col-md-12 ">
                 <div id="popup-container" className="popup-container col-md-6 mx-auto text-center bg-light p-5">
                     <i id="close-icon" className="fas fa-times position-absolute"></i>
-                    <img src="" width="150px" height="150px" alt="" />
+                    <img src={Img2} width="150px" height="150px" alt="" />
                     <p className=""></p>
                     <a href="/#" target="_blank" id="buy_now_link" className="btn btn-dark">Continue</a>
                 </div>
@@ -15,7 +17,7 @@ function Footer() {
             <footer className="col-md-12 col-lg-12 col-12 mt-5 p-4">
                 <div className="col-md-6 d-flex align-items-center flex-column ">
                     <a className=" col-5 col-md-3 align-center" href="/#">
-                        <img src="" alt="" style={({height: '40px',width: '60px',})} />
+                        <img src={Img2} alt="" style={({height: '40px',width: '60px',})} />
                     </a>
                     {/* <!-- <P>{{$setting->footer_description}}</P> --> */}
                     <p style={({color: '#dba95c',marginTop:'1rem',})} className="text-center"></p>

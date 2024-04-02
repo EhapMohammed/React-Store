@@ -272,11 +272,18 @@ transform: translateY(-333px);
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
-
+.products-section .card 
+{
+  width: 210px;
+}
+.products-section .card  a
+{
+  text-decoration: none;
+}
 .products-section .card .card-img-container,
 .products-section .card .card-img-top {
-  height: 390px;
-  width: 300px;
+  height: 150px;
+  width: 150px;
 }
 
 .products-section .card-body {
@@ -287,8 +294,8 @@ transform: translateY(-333px);
 }
 
 .products-section .card-body .card-title {
-  font-weight: 100;
-  font-size: 1.25rem;
+  font-weight: 400;
+  font-size: 1rem;
 }
 
 @media (min-width: 768px) and(max-width:1024px) {

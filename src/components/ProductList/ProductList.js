@@ -19,7 +19,6 @@ function ProductList() {
   useEffect(() => {
     (async ()=>{
       const result = await axios.get(proudect_api);
-      console.log(result.data);
       setProducts(result.data);
     })() ;
    
@@ -46,7 +45,6 @@ function ProductList() {
 
   return (
     <>
-      <button onClick={addCat}>add</button>
       <section 
         id="our-product"
         className="product-main-contianer col-md-12 col-lg-12 col-12 mx-auto my-5"
@@ -59,7 +57,7 @@ function ProductList() {
         <div className="products-section col-12 col-md-12 flex-wrap px-0">
         {products.map(product => {
           return(
-            <div key={product.id} className="card col-12 col-md-6 col-lg-3 position-relative px-0 border-0">
+            <div key={product.id} className="card position-relative px-0 border-0">
             <Product product={product}/>
             </div>
           )   
